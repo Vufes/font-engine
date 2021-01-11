@@ -10,6 +10,8 @@ The main point is to create easy tool to convert character maps directly into te
 Currently it is possible to create canvas with text, however it is not yet effective as one must reference index of sprite from character map. Dictionary is required to 
 improve quality of life.
 
+Example of numbers created on empty canvas:
+
 ![0-9](img/example.png)
 
 # Different font charmaps
