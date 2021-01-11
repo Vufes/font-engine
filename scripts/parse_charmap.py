@@ -13,11 +13,11 @@ def load_oldschool():
     charmap_size = np.array([6,18])
 
     sprites = np.zeros((charmap_size[0]*charmap_size[1],\
-                        sprite_size[0],sprite_size[1]))
+                        sprite_size[0],sprite_size[1],3))
 
     for y in range(charmap_size[0]):
         for x in range(charmap_size[1]):
             reg = start + np.array([y,x]) * (sprite_size + offset)
             sprites[y*charmap_size[1]+x] = arr[reg[0]:reg[0]+sprite_size[0],\
-                                               reg[1]:reg[1]+sprite_size[1],0]
+                                               reg[1]:reg[1]+sprite_size[1]]
     return sprites
